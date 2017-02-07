@@ -18,7 +18,7 @@ void outputDate(int length ,int date)
 {
 	double lengthD = length * 0.01;
 
-	printf("%.2lf¹ÌÅÍ ±íÀÌÀÇ ¿ì¹°À» Å»ÃâÇÏ±â À§ÇØ¼­´Â %dÀÏÀÌ °É¸³´Ï´Ù.", lengthD, date);
+	printf("%.2lfë¯¸í„° ê¹Šì´ì˜ ìš°ë¬¼ì„ íƒˆì¶œí•˜ê¸° ìœ„í•´ì„œëŠ” %dì¼ì´ ê±¸ë¦½ë‹ˆë‹¤.", lengthD, date);
 }
 
 int hallEscapeDate(int length)
@@ -31,6 +31,7 @@ int hallEscapeDate(int length)
 		if (length == 0)
 			break;
 
+		//forë¬¸ì—ì„œ i==0ì¸ ê²½ìš°ì™€ i==1ì¸ ê²½ìš°ë°–ì— ì—†ê¸°ë•Œë¬¸ì—, êµ³ì´ for ì•ˆì— if ë¡œ ì•ˆë„£ê³  ë°–ìœ¼ë¡œ ë¹¼ë„ë¨
 		for (i = 0; i < 2; i++)
 		{
 			if (i == 0)
@@ -62,7 +63,7 @@ int inputLength()
 {
 	int input;
 
-	printf("* ¿ì¹°ÀÇ ±íÀÌ¸¦ ÀÔ·ÂÇÏ½Ã¿À(cm´ÜÀ§) : ");
+	printf("* ìš°ë¬¼ì˜ ê¹Šì´ë¥¼ ì…ë ¥í•˜ì‹œì˜¤(cmë‹¨ìœ„) : ");
 	scanf("%d", &input);
 
 	return input;

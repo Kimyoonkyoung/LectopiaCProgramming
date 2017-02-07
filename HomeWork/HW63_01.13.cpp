@@ -1,7 +1,7 @@
 /*
-	!!������׷��� ����ϱ�
+	!!히스토그램을 출력하기
 
-	1�̻� 9������ ������ N�� �Է� �޾� �Ʒ��� ���� �ö󰡴� ������ �׷� ����
+	1이상 9이하의 정수를 N개 입력 받아 아래서 위로 올라가는 히스토 그램 구현
         *
         *
 	    *
@@ -69,6 +69,10 @@ void outputHisto(int *dataArray, int dataCnt)
 	}
 }
 
+/**
+ * file open 함수는 main에 포함시키는 것이 
+ * 함수 call 하는데에 시간소비가 더 생김
+ */
 FILE * fileOpen(char *filename, char *mode)
 {
 	FILE *fp;
